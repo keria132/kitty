@@ -1,0 +1,28 @@
+
+.text-style(h1, @size: 2rem){
+    font-weight: 600;
+    font-size: @size;
+}
+
+.text-style(h2, @size: 1.5rem){
+    font-weight: 400;
+    font-size: @size;
+}
+
+.text-style(p, @size: 1rem){
+    font-weight: 400;
+    font-size: @size;
+}
+
+.underline(@heightSize: 5px, @widthSize: 40%){
+    display: flex;
+    flex-flow: column nowrap;
+    &:after{
+        content: '';
+        width: @widthSize;
+        height: @heightSize;
+        margin-top: 5px;
+        background-color: lightgray;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,27 @@
+@import "./_css-reset.less";
+@import "./_functions.less";
+
+html{
+    font-size: 4vw;
+    font-family: 'Quicksand';
+    @media screen and (min-width: 600px){
+        font-size: 3vw;
+    }
+    @media screen and (min-width: 992px){
+        font-size: 2vw;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: 1.5vw;
+    }
+}
+
+
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    @import "./header.less";
+    @import "./main.less";
+    
+}
